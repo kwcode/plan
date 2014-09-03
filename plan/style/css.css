@@ -1,2 +1,49 @@
-﻿body {
-}
+﻿@charset "utf-8";
+
+/*缺省值begin*/
+html { margin: 0px; padding: 0px; }
+body { margin: 0px; padding: 0px; font-size: 12px; font-family: 微软雅黑,Microsoft YaHei,Arial,"宋体"; color: #333; }
+a { text-decoration: none; color: #333; outline: none; }
+a:hover { text-decoration: none; outline: none; color: #fd7f04; }
+a:active, a:visited { outline: none; }
+p, ul, li, form, h1, h2, h3, h4, h5, h6, dl, dt, dd, img, div, table, td, th, input, textarea { margin: 0px; padding: 0px; }
+input, textarea { font-family: 微软雅黑,Microsoft YaHei,Arial,"宋体",Tahoma, Geneva, sans-serif; outline: none; font-size: 12px; }
+table, td { border: 0 none; border-collapse: collapse; }
+ul, li, dl, dt, dd, ol { list-style: none; }
+.yahei { font-family: 微软雅黑,Microsoft YaHei,Arial,"宋体"; }
+/*.wrap { width: 1040px; margin-left: auto; margin-right: auto; }*/
+img { border: 0 none; overflow: hidden; }
+div.html-data img { max-width: 800px; }
+div.news-details img.gallery { max-width: 740px; }
+em, strong, i { font-style: normal; font-weight: normal; }
+
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { zoom: 1; }
+
+.clear { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.no-character { font-size: 0; }
+.fontlh { font: 12px/1.5 tahoma,arial,\5b8b\4f53; }
+/*“\5b8b\4f53″ 就是 “宋体”。用 unicode 表示，不用 SimSun, 是因为 Firefox 的某些版本和 Opera 不支持 SimSun 的写法。避免产生乱码，对页面造成影响。*/
+.hlg { color: #d61718; }
+.more,
+.red a { color: #d61718; }
+.more:hover,
+.red a:hover { color: #d61718; text-decoration: underline; }
+
+.html-data h2 { line-height: 1.8; }
+.html-data p { font-size: 14px; line-height: 2; text-indent: 2em; }
+/*缺省值end*/
+
+/*表单验证*/
+label.validate-error { color: #ff9740; font-size: 12px; display: inline; }
+label.validate-success { color: #13a82c; padding: 2px 5px 2px 24px; background: url(../imgs/ico_msg_right.png) no-repeat left center; }
+
+/*
+label.validate-error{color:#ac1414; font-weight:bold ; padding-left:20px; line-height:16px;background:url(../imgs/ico_wrong.png)  no-repeat; }
+label.validate-success{color: #13aa24;padding-left:20px; line-height:16px;background:url(../imgs/ico_yes.png)  no-repeat; }
+*/
+input.validate-error { background: #F7F6F2; border: #f8aa03 1px solid; color: #aaa; }
+textarea.validate-error { background: #F7F6F2; border: #f8aa03 1px solid; color: #aaa; }
+select.validate-error { background: #F7F6F2; border: #f8aa03 1px solid; color: #aaa; }
